@@ -38,14 +38,18 @@ TWITTER_TOKEN_SECRET        = " "
 
 Le programme possède plusieurs fonctions, qui sont appelées par une générale. Toutes les fonctions sont exhaustivement et chronologiquement telles que :
 
-  - Scrapping des e-mails des mairies des villes des 3 départements : les Landes (40 alias pays natal de Baaaaaab), le Nord (59 alias le pays natal de Massimooooo) et la Gironde (33 alias notre pays d'adoption).
+  - Scrapping des e-mails des mairies des villes des 3 départements depuis http://annuaire-des-mairies.com : les Landes (40 alias pays natal de baaaaaab), le Nord (59 alias le pays natal de Massimooooo) et la Gironde (33 alias notre pays d'adoption).
 
   - Mailing ou l'envoi vers chacune de ces adresses e-mails d'un message de promotion de The Hacking Project (liens vers le site et facebook inclus)
 
-  - Twittering de chaque mairie ou la 2ème passe dans les cerveaux ! Recherche des "Handle" (ouais les pseudos quoi ....) Twitter des comptes de chaque ville des départements cités plus haut et les follow avec un compte spécifique
+  - Twittering de chaque mairie ou la 2ème passe dans les cerveaux ! Recherche des "Handle" (ouais les pseudos quoi...) Twitter des comptes de chaque ville des départements cités plus haut et les follow.
 
-  - Perform_global qui permet de lancer toute la machine à bourrage de crâne !
-    Scrapping + Mailing + Twittering (search & add + follow) = entree + plat + dessert
+  - **Perform_global.rb** qui permet de lancer toute la machine à bourrage de crâne !
+    Scrapping + Mailing + Twittering (search & add + follow) = entrée + plat + dessert !
+
+**## Conditions de test du programme pour les corrections
+
+Compte-tenu des restrictions du nombre de requêtes à l'API Twitter (et au serveur de l'annuaire des mairies en fin d'après-midi... OUPS! On a tout pêté ! ;D) nous avons choisi de restreindre celles-ci sur un plus petit échantillon. Comme ça vous ne corrigerez pas les exos en perdant 20 minutes par méthode, tout en vérifiant le bon fonctionnement de celles-ci. ;)**
 
 ## Contributeurs
 
