@@ -44,6 +44,10 @@ Le programme possède plusieurs fonctions, qui sont appelées par une générale
 
 ## Contributeurs
 
-![picture](THP_BDX.png)  @bab - Baptiste ROGEON
+@bab - Baptiste ROGEON
 
 @massimo - Maxime FLEURY
+
+<p align="center">
+  ![picture](THP_BDX.png)
+</p>
