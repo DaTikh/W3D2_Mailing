@@ -1,3 +1,5 @@
 .env
 .DS_Store
 .bundle
+database/max.csv
+mailer/temp_list.csv
