@@ -21,7 +21,7 @@ end
 def send_email_to_line(line, message)
   # Appel du message dans la fonction envoyer email
   content = get_the_email_html(message)
-  Authentification session with .env
+  # Authentification session with .env
   gmail = Gmail.connect(ENV['USERNAME'], ENV['PASSWORD'])
   # Envoi du mail à l'adresse email de l'array de la line rentré dans la fonction
   gmail.deliver do

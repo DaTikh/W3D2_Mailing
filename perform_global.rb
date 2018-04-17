@@ -1,6 +1,10 @@
 require_relative 'scrapper/townhalls_scrapper'
 require_relative 'mailer/mailer'
+require 'gmail'
+require 'dotenv'
+Dotenv.load('.env')
 require 'CSV'
+
 
 def perform_global
 
