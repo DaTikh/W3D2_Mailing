@@ -10,18 +10,18 @@ def go_through_all_the_lines(url)
 end
 
 # Lie le message qui sera dans le mail
-def get_the_email_html
+def get_the_email_html(message)
   # Addressage du fichier message
-  message = File.read("message.html.erb")
+  message = File.read(message)
   return message
 end
 
 # Appelle le modèle de message à envoyer, s'authentifie avec les IDs rentrés dans le .env,
 # et envoie à chaque adresse de mairie le mail !
-def send_email_to_line(line)
+def send_email_to_line(line, message)
   # Appel du message dans la fonction envoyer email
-  content = get_the_email_html()
-  # Authentification session with .env
+  content = get_the_email_html(message)
+  Authentification session with .env
   gmail = Gmail.connect(ENV['USERNAME'], ENV['PASSWORD'])
   # Envoi du mail à l'adresse email de l'array de la line rentré dans la fonction
   gmail.deliver do
@@ -39,15 +39,13 @@ end
 
 # Fonction qui permet de faire fonctionner l'ensemble avec la récupération du fichier des adresses de mairies,
 # et un appel de la fonction envoyer mail pour chacune des adresses mail
-def perform
-  townhalls_list = go_through_all_the_lines('../database/townhalls.csv')
+def perform_mailer(url, message)
+  townhalls_list = go_through_all_the_lines(url)
   townhalls_list.each do |line|
     if line[2] == "email"
     else
-      send_email_to_line(line)
-      print "Email envoyé vers #{line[0]}"
+      send_email_to_line(line, message)
+      puts "Email envoyé vers #{line[0]}"
     end
   end
 end
-
-perform()

@@ -41,6 +41,7 @@ def get_the_email_of_a_townhall_from_its_webpage(url)
     zipcode = url.gsub!(/\D/, "")
     email = page.css("/html/body/div/main/section[2]/div/table/tbody/tr[4]/td[2]").text
     townhall_hash = { :name => name, :zipcode => zipcode, :email => email }
+    print townhall_hash
     final_array << townhall_hash
   rescue OpenURI::HTTPError => ex
     end
@@ -61,7 +62,7 @@ def to_csv(final_array)
   puts "Base de données mise à jour !!"
 end
 
-def perform(dept)
+def perform_scrapper(dept)
   final_array = []
   dept.each do |dept|
   puts "Début de l'acquisition des données pour #{dept.capitalize}..."
@@ -70,5 +71,3 @@ def perform(dept)
   end
   to_csv(final_array)
 end
-
- perform(["gironde", "nord", "landes"])
