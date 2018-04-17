@@ -47,9 +47,9 @@ Le programme possède plusieurs fonctions, qui sont appelées par une générale
   - **Perform_global.rb** qui permet de lancer toute la machine à bourrage de crâne !
     Scrapping + Mailing + Twittering (search & add + follow) = entrée + plat + dessert !
 
-**## Conditions de test du programme pour les corrections
+## Conditions de test du programme pour les corrections
 
-Compte-tenu des restrictions du nombre de requêtes à l'API Twitter (et au serveur de l'annuaire des mairies en fin d'après-midi... OUPS! On a tout pêté ! ;D) nous avons choisi de restreindre celles-ci sur un plus petit échantillon. Comme ça vous ne corrigerez pas les exos en perdant 20 minutes par méthode, tout en vérifiant le bon fonctionnement de celles-ci. ;)**
+**Compte-tenu des restrictions du nombre de requêtes à l'API Twitter (et au serveur de l'annuaire des mairies en fin d'après-midi... OUPS! On a tout pêté ! ;D) nous avons choisi de restreindre celles-ci sur un plus petit échantillon. Comme ça vous ne corrigerez pas les exos en perdant 20 minutes par méthode, tout en vérifiant le bon fonctionnement de celles-ci. ;)**
 
 ## Contributeurs
 
