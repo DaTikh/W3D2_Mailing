@@ -49,5 +49,5 @@ Le programme possède plusieurs fonctions, qui sont appelées par une générale
 @massimo - Maxime FLEURY
 
 <p align="center">
-  ![picture](THP_BDX.png)
+  <img src="THP_BDX.png"/>
 </p>
