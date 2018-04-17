@@ -38,7 +38,7 @@ def handle_search(list)
       line[3] = client.user_search("ville #{line[0]}").first.screen_name
     else
       line[3] = ""
-    
+    break if line[0] == "BUDOS"
     end
   end
   p list
