@@ -43,11 +43,10 @@ Le programme possède plusieurs fonctions, qui sont appelées par une générale
     Scrapping + Mailing + Twittering = entree + plat + dessert
 
 ## Contributeurs
-
+<p align="center">
 @bab - Baptiste ROGEON
 
 @massimo - Maxime FLEURY
 
-<p align="center">
   <img src="THP_BDX.png"/>
 </p>
