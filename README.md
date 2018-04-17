@@ -20,12 +20,18 @@ Ensuite, pour être sur d'avoir tous les outils nécessaires au fonctionnement d
 
 ```
 
-Si vous souhaitez l'envoi des mails, assurez-vous d'avoir un fichier .ENV en local et à la racine, renseigné des données de votre compte gmail renseignés tel que :
+Si vous souhaitez l'envoi des mails, assurez-vous de renseigner dans un fichier .ENV en local et à la racine, renseigné des données de votre compte Gmail renseignés tel que :
 
 ```
 
   USERNAME=alice@bob.fr
   PASSWORD=XXXXXXXXXXXXX
+
+```
+
+Si vous souhaitez le search, add & follow sur Twitter, assurez-vous de renseigner dans un fichier .ENV en local et à la racine, renseigné des données de votre compte Twitter renseignés tel que :
+```
+
 
 ```
 
@@ -40,7 +46,7 @@ Le programme possède plusieurs fonctions, qui sont appelées par une générale
   - Twittering de chaque mairie ou la 2ème passe dans les cerveaux ! Recherche des "Handle" (ouais les pseudos quoi ....) Twitter des comptes de chaque ville des départements cités plus haut et les follow avec un compte spécifique
 
   - Perform_global qui permet de lancer toute la machine à bourrage de crâne !
-    Scrapping + Mailing + Twittering = entree + plat + dessert
+    Scrapping + Mailing + Twittering (search & add + follow) = entree + plat + dessert
 
 ## Contributeurs
 
