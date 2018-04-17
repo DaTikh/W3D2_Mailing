@@ -24,12 +24,9 @@ def get_the_email_html(line)
   @mairie = line[0]
   message = File.read("message.html.erb")
   return message
-
 end
 
 def send_email_to_line(line)
-
-
   # Appel du message dans la fonction envoyer email
   content = get_the_email_html(line)
   # Authentification session with .env
@@ -48,7 +45,14 @@ end
 def perform
   townhalls_lines = go_through_all_the_lines('temp_list.csv')
 
-  # townhalls_lines.each do |line|
+  townhalls_lines.each do |line|
+    if line[2] == "Email"
+      puts "NOWAY"
+    else
+      puts "#{line[2]} = send"
+      send_email_to_line(line)
+    end
+  end
 
   # while i < townhalls_lines.length do
   #   townhalls_emails << townhalls_lines[i][2]
@@ -59,7 +63,7 @@ def perform
 
 
 
-  send_email_to_line(townhalls_lines[1])
+
 
 end
 
