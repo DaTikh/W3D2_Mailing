@@ -9,24 +9,29 @@ Ce projet rentre dans le cadre du travail demandé lors du jour n°2 de la semai
 Pour faire fonctionner ce programme, veuillez cloner ce repo sur votre machine avec la commande suivante :
 
 ```
-  - git clone https://github.com/DaTikh/W3D2_Mailing
+  $ git clone https://github.com/DaTikh/W3D2_Mailing
 ```
 
 Ensuite, pour être sur d'avoir tous les outils nécessaires au fonctionnement du programme, effectuer une installation des Gems requises :
 
 ```
-
-  - bundle install
-
+  $ bundle install
 ```
 
-Si vous souhaitez l'envoi des mails, assurez-vous d'avoir un fichier .ENV en local et à la racine, renseigné des données de votre compte gmail renseignés tel que :
+Si vous souhaitez l'envoi des mails, assurez-vous de renseigner dans un fichier .env en local et à la racine du repo les identifiants de votre compte Gmail, tel que :
 
 ```
-
   USERNAME=alice@bob.fr
   PASSWORD=XXXXXXXXXXXXX
+```
 
+Si vous souhaitez le search, add & follow sur Twitter, assurez-vous de renseigner dans un fichier .env en local et à la racine du repo les identifiants de votre compte Twitter, tel que :
+
+```
+TWITTER_CONSUMER            = " "
+TWITTER_CONSUMER_SECRET     = " "
+TWITTER_TOKEN               = " "
+TWITTER_TOKEN_SECRET        = " "
 ```
 
 ## Fonctionnement du programme
@@ -40,7 +45,7 @@ Le programme possède plusieurs fonctions, qui sont appelées par une générale
   - Twittering de chaque mairie ou la 2ème passe dans les cerveaux ! Recherche des "Handle" (ouais les pseudos quoi ....) Twitter des comptes de chaque ville des départements cités plus haut et les follow avec un compte spécifique
 
   - Perform_global qui permet de lancer toute la machine à bourrage de crâne !
-    Scrapping + Mailing + Twittering = entree + plat + dessert
+    Scrapping + Mailing + Twittering (search & add + follow) = entree + plat + dessert
 
 ## Contributeurs
 
