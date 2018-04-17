@@ -29,6 +29,7 @@ def handle_search(list)
     else # Si on ne trouve rien on enregistre un blanc.
       line[3] = ""
     break if line[0] == "BUDOS" # Pour pouvoir effectuer le test arrête à la mairie BUDOS, sinon on finira par se faire kick de l'API Twitter...
+#  Afin de continuer à faire tourner le script jusqu'à la fin il faudrait rescue les erreurs "Too many requests", mettre un sleep qui relancerait plus tard.
     end
   end
   list
