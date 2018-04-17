@@ -21,7 +21,7 @@ end
 
 #
 def get_the_email_html(line)
-  @mairie = line[0]
+  # Addressage du fichier message
   message = File.read("message.html.erb")
   return message
 end
@@ -31,7 +31,7 @@ def send_email_to_line(line)
   content = get_the_email_html(line)
   # Authentification session with .env
   gmail = Gmail.connect(ENV['USERNAME'], ENV['PASSWORD'])
-  # Envoi du mail à l'email
+  # Envoi du mail à l'email de l'array rentré dans la fonction
   gmail.deliver do
     to "#{line[2]}"
     subject "Promo de THP spécialement pour la Mairie de #{line[0]}!"
@@ -44,27 +44,13 @@ end
 
 def perform
   townhalls_lines = go_through_all_the_lines('temp_list.csv')
-
   townhalls_lines.each do |line|
     if line[2] == "Email"
-      puts "NOWAY"
     else
-      puts "#{line[2]} = send"
       send_email_to_line(line)
+      puts "#{line[2]} = send"
     end
   end
-
-  # while i < townhalls_lines.length do
-  #   townhalls_emails << townhalls_lines[i][2]
-  #   i += 1
-  # end
-
-  # return townhalls_emails
-
-
-
-
-
 end
 
 perform()
