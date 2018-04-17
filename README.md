@@ -48,4 +48,4 @@ Le programme possède plusieurs fonctions, qui sont appelées par une générale
 
   @massimo - Maxime FLEURY
 
-![Alt text](THP_BDX.png?raw=true "Title")
+![picture](THP_BDX.png)
