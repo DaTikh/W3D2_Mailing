@@ -1,5 +1,6 @@
 source "https://rubygems.org"
-ruby "2.3.4"
+
+ruby "2.5.1"
 
 gem 'pry'
 gem 'twitter'
